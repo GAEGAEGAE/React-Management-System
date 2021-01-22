@@ -1,5 +1,11 @@
 import app from './app'
+import config from './config/index'
 
-app.listen('7000', () => {
-    console.log("hi");
+
+//const {PORT} = config
+
+const PORT = '7000';
+
+app.listen(PORT, () => {
+    console.log(`Server started on Port ${PORT}`);
 });
